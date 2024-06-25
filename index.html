@@ -1,21 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo à Biblioteca Online</h1>
-    <p>Aqui você encontra uma vasta coleção de livros e recursos educacionais.</p>
+    <header>
+        <h1>Biblioteca Online</h1>
+    </header>
 
-    <h2>Livros Recomendados</h2>
-    <ul>
-        <li><a href="https://www.example-library.com/book1">Livro 1</a></li>
-        <li><a href="https://www.example-library.com/book2">Livro 2</a></li>
-        <li><a href="https://www.example-library.com/book3">Livro 3</a></li>
-    </ul>
+    <nav>
+        <a href="#livros-recomendados">Livros Recomendados</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
 
-    <p>Explore nossa coleção completa <a href="https://www.example-library.com">aqui</a>.</p>
+    <main>
+        <section id="livros-recomendados">
+            <h2>Livros Recomendados</h2>
+            <ul>
+                <li><a href="https://www.example-library.com/book1">Livro 1</a></li>
+                <li><a href="https://www.example-library.com/book2">Livro 2</a></li>
+                <li><a href="https://www.example-library.com/book3">Livro 3</a></li>
+            </ul>
+        </section>
+
+        <section id="novidades">
+            <h2>Novidades</h2>
+            <p>Descubra os lançamentos mais recentes na nossa biblioteca.</p>
+            <ul>
+                <li><a href="https://www.example-library.com/new-releases/1">Lançamento 1</a></li>
+                <li><a href="https://www.example-library.com/new-releases/2">Lançamento 2</a></li>
+                <li><a href="https://www.example-library.com/new-releases/3">Lançamento 3</a></li>
+            </ul>
+        </section>
+
+        <section id="categorias">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="https://www.example-library.com/category/fiction">Ficção</a></li>
+                <li><a href="https://www.example-library.com/category/non-fiction">Não Ficção</a></li>
+                <li><a href="https://www.example-library.com/category/science">Ciência</a></li>
+                <li><a href="https://www.example-library.com/category/history">História</a></li>
+            </ul>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>A Biblioteca Online oferece acesso a uma vasta coleção de livros digitais, abrangendo diversos temas e gêneros.</p>
+            <p>Visite nosso site principal para explorar mais: <a href="https://www.example-library.com">www.example-library.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Biblioteca Online. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
+
