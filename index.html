@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Online</title>
     <style>
+        /* Estilos gerais */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
             padding: 0;
+            background-color: #f3f3f3;
         }
         header {
             background-color: #333;
@@ -17,34 +19,45 @@
             padding: 10px 0;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
         nav {
+            background-color: #444;
             text-align: center;
-            margin: 20px 0;
+            padding: 10px 0;
         }
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             padding: 10px 15px;
             margin: 0 5px;
             border-radius: 5px;
-            background-color: #f0f0f0;
+            background-color: #666;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #ccc;
+            background-color: #888;
         }
         main {
+            max-width: 1200px;
             margin: 20px auto;
-            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
+        section {
+            margin-bottom: 40px;
         }
         h2 {
-            font-size: 1.8em;
+            font-size: 2em;
+            color: #333;
         }
         p {
-            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
         }
         ul {
             list-style-type: none;
@@ -58,9 +71,29 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Estilos específicos para as seções */
+        .book {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .book img {
+            max-width: 150px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .book-details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .book-description {
+            color: #777;
         }
     </style>
 </head>
@@ -79,21 +112,42 @@
     <main>
         <section id="livros-recomendados">
             <h2>Livros Recomendados</h2>
-            <ul>
-                <li><a href="https://www.example-library.com/book1">Livro 1</a></li>
-                <li><a href="https://www.example-library.com/book2">Livro 2</a></li>
-                <li><a href="https://www.example-library.com/book3">Livro 3</a></li>
-            </ul>
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Livro 1">
+                <div class="book-details">
+                    <h3 class="book-title">Livro 1</h3>
+                    <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ut risus condimentum, vel ultrices dui molestie.</p>
+                    <a href="https://www.example-library.com/book1" target="_blank">Ver mais</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Livro 2">
+                <div class="book-details">
+                    <h3 class="book-title">Livro 2</h3>
+                    <p class="book-description">Sed sed tincidunt lectus. In facilisis odio nec felis aliquet, vel laoreet justo tincidunt.</p>
+                    <a href="https://www.example-library.com/book2" target="_blank">Ver mais</a>
+                </div>
+            </div>
         </section>
 
         <section id="novidades">
             <h2>Novidades</h2>
-            <p>Descubra os lançamentos mais recentes na nossa biblioteca.</p>
-            <ul>
-                <li><a href="https://www.example-library.com/new-releases/1">Lançamento 1</a></li>
-                <li><a href="https://www.example-library.com/new-releases/2">Lançamento 2</a></li>
-                <li><a href="https://www.example-library.com/new-releases/3">Lançamento 3</a></li>
-            </ul>
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Novo Lançamento 1">
+                <div class="book-details">
+                    <h3 class="book-title">Novo Lançamento 1</h3>
+                    <p class="book-description">Proin malesuada, odio vel ultricies eleifend, libero velit laoreet elit, nec ultricies erat felis ut ligula.</p>
+                    <a href="https://www.example-library.com/new-releases/1" target="_blank">Ver mais</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Novo Lançamento 2">
+                <div class="book-details">
+                    <h3 class="book-title">Novo Lançamento 2</h3>
+                    <p class="book-description">Vestibulum sit amet felis non neque vehicula gravida ac ut velit. Phasellus faucibus consectetur ante, non scelerisque quam accumsan vel.</p>
+                    <a href="https://www.example-library.com/new-releases/2" target="_blank">Ver mais</a>
+                </div>
+            </div>
         </section>
 
         <section id="categorias">
@@ -118,4 +172,5 @@
     </footer>
 </body>
 </html>
+
 
